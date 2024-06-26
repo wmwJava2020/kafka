@@ -3,7 +3,7 @@
  * Date : 6/26/2024
  * Time : 2:35 PM
  */
-package com.tutorials.spring_kafka.controller;
+package com.springboot.tutorial.controller;
 
 import com.tutorials.spring_kafka.kafka.KafkaProducer;
 import org.springframework.http.ResponseEntity;

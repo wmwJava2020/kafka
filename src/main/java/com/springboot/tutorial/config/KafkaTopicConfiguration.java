@@ -3,7 +3,7 @@
  * Date : 6/26/2024
  * Time : 2:10 PM
  */
-package com.tutorials.spring_kafka.config;
+package com.springboot.tutorial.config;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.context.annotation.Bean;
@@ -15,7 +15,7 @@ public class KafkaTopicConfiguration {
     @Bean
     public NewTopic bbcDailyNews(){
         return TopicBuilder.name("news")
-                .partitions(4)
+                //.partitions(1)
                 .build();
     }
 }
