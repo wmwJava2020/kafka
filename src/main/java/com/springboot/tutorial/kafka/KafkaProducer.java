@@ -3,11 +3,13 @@
  * Date : 6/26/2024
  * Time : 2:13 PM
  */
-package com.tutorials.spring_kafka.kafka;
+package com.springboot.tutorial.kafka;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
+
+import java.time.LocalDateTime;
 
 @Service
 @Slf4j
@@ -19,8 +21,8 @@ public class KafkaProducer {
     }
 
     public void sendMessage(String message){
-        log.info("Daily BBC news is being written : ",message);
-        kafkaTemplate.send("news","There  is a huge clash in Kenya today because of TAX");
+        log.info("KafkaProducer Daily BBC news.... ",message);
+        kafkaTemplate.send("news","KafkaProducer Local Time is : " + LocalDateTime.now());
     }
 
 
